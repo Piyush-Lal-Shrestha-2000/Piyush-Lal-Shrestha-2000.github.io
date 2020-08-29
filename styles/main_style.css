@@ -1,0 +1,84 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Calibre, "San Francisco", "SF Pro Text", -apple-system, system-ui, BlinkMacSystemFont, Roboto, "Helvetica Neue", "Segoe UI", Arial, sans-serif;
+    font-size: 15px;
+    color: #E6F1FF;
+}
+
+body{
+    background: #0A192F;
+    min-width: 300px;
+}
+
+.navbar-class{
+    /* padding: inherit 50px;  */
+    box-shadow: 0px 1px 50px black;
+}
+
+.navbar-collapse {
+    /* background-color: #172A45; */
+    background-color: #0A192F;
+    width: 100vw;
+}
+
+@media screen and (max-width: 992px){
+    .navbar-collapse {
+        background-color: #172A45;
+        text-align: right;
+        padding: 10px;
+    }    
+
+}
+
+.page-links{
+    margin-right: 10px;
+}
+
+.page-links li a{
+    color: #E6F1FF;
+    margin-right: 20px;
+}
+
+.page-links li a span{
+    color: #5AE7C8;
+    margin-right: 5px;
+}
+
+.green-btn{
+    /* background: #0A192F; */
+    background: transparent;
+    color: #5AE7C8;
+    border: solid 1px #5AE7C8;
+    padding: 10px 20px;
+    margin-right: 20px;
+    border-radius: 5px;
+}
+
+.contents-class{
+    background: url('../images/background.png');
+    height: 2940px; /* Actual height of the image. */
+    background-position: center; /* Center the image */
+    background-repeat: repeat-y; /* Do not repeat the image */
+    background-size: cover; /* Resize the background image to cover the entire container */
+}
+
+.contents-class div{
+    background: transparent;
+}
+
+.neon-text{
+    color: #5AE7C8;
+}
+
+.neon-text:hover{
+    color: #5AE7C8;
+}
+
+.page-contents{
+    margin-top: 50px;
+}
+
+#about_section span{
+
+}
