@@ -243,6 +243,72 @@ body{
     margin-bottom: 100px;
 }
 
+/* EXPERIENCE SECTION STYLE */
+.experience{
+    margin-top: 20px;
+}
+
+.nav-pills .nav-link.active.tab-open, .nav-pills .show > .nav-link.tab-open {
+color: #46B3A2;
+background-color: #172a45;
+border-radius: 0;
+border-left: 6px solid #46B3A2;
+border-bottom: 2px solid black;
+}
+
+.nav-pills .nav-link.active.tab-close, .nav-pills .show > .nav-link.tab-close {
+color: #7992A1;
+background-color: #172a45;
+border-radius: 0;
+border-left: 6px solid #7992A1;
+border-bottom: 2px solid black;
+}
+
+.tab-pane {
+background-color: #172a45 !important;
+color: #7992B0;
+padding: 30px;
+border-bottom: 2px solid black;
+margin-left: 6px;
+}
+
+.tab-pane h4 {
+color: #CCD6F6;
+margin-bottom: 10px;
+}
+
+.tab-pane ul {
+list-style-image: url('../images/list_bullet.png');
+padding-left: 10px;
+margin-bottom: 5px;
+}
+
+.tab-pane li {
+margin: 15px 0;
+}
+
+.tab-pane.tab-close {
+display: none;
+}
+
+.tab-pane.tab-open {
+display: block;
+}
+
+.nav-pills .nav-item.show .nav-link, .nav-pills .nav-link.active {
+padding: 10px;
+width: 330px;
+}
+
+@media (min-width: 576px) {
+    .nav-pills .nav-item.show .nav-link, .nav-pills .nav-link.active {
+        width: 550px;
+        padding: 10px;
+    }
+}
+
+/* EXPERIENCE SECTION STYLE ENDS*/
+  
 /* SOCIAL MEDIA LINKS CLASS STYLE SECTION. */
 .social_media_links{
     list-style-type: none;
