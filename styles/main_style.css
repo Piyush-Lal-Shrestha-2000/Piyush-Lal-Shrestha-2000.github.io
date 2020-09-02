@@ -313,7 +313,33 @@ body{
 }
 
 /* EXPERIENCE SECTION/HONORS & AWARDS SECTION STYLE ENDS */
+
+/* PROJECTS SECTION STYLE STARTS. */
+.project {
+    margin-top: 30px;
+  }
   
+  .project-text {
+    color: #CCD6F6;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    margin-bottom: 0;
+    padding: 5px;
+    padding-right: 0;
+    font-size: 15px;
+    line-height: 30px;
+  }
+    
+  .btn.btn-img {
+    color: white;
+    font-size: 21px;
+    padding: 0px 15px 2px 0px;
+    float: right;
+  }
+  
+/* PROJECTS SECTION STYLE ENDS. */
 
 /* PUBLICATIONS SECTION STYLE STARTS. */
 
