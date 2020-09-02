@@ -143,27 +143,29 @@ body{
 
 /* CUSTOM LINES. */
 
-/* HORIZONTAL LINE. */
-.horizontal_line{
+/* VERTICAL LINE. */
+.vertical_line{
     border: solid 1px #7C87A4;
     height: 75px;
     width: 1px;
     margin: 10px auto 0 auto;
+    background-color: #7C87A4;
 }
 
-/* VERTICAL LINE. */
-.vertical_line{
+/* HORIZONTAL LINE. */
+.horizontal_line{
     border: solid 1px #7C87A4;
-    /* width: auto; */
-    height: 1px;
-    margin: auto 0;
-    box-shadow: 0 4px 8px 0 #7C87A4, 0 6px 20px 0 #7C87A4;
+    /* height: 1px; */
+    width: 50%;
+    margin: auto 20px;
+    filter: blur(1px);
 }
-
-
+    
 /* CUSTOM IMAGE STYLE. */
 .filtered-image{
-    filter: contrast(85%) hue-rotate(127deg) invert(12%) saturate(113%) sepia(10%);
+    /* filter: contrast(85%) hue-rotate(127deg) invert(12%) saturate(113%) sepia(10%); */
+    filter: grayscale(100%);
+    /* filter: sepia(100%); */
     cursor: pointer;
 }
 .filtered-image:hover{
@@ -179,6 +181,8 @@ body{
 .neon-lists li{
     padding-left: 5px;
 }
+
+
 /* SOME CUSTOM STYLES FOR COMPONENTS ENDS. */
 
 
@@ -224,10 +228,11 @@ body{
 
 .contents-class{
     background: url('../images/background.png');    /* Importing background image. */
-    height: 100%; /* Actual height of the image. */
-    background-position: center; /* Center the image */
+    /* height: 100%; Actual height of the image. */
+    /* background-position: center; Center the image */
     background-repeat: repeat-y; /* Repeat image in y direction. */
-    background-size: cover; /* Resize the background image to cover the entire container */
+    /* width: 100%; */
+    background-size: contain; /*Resize the background image to cover the entire container*/
 }
 
 .contents-class div{
@@ -238,66 +243,66 @@ body{
 /* PAGE CONTENTS STYLE. */
 .page-contents{
     padding: 150px 40px;
-    /* margin: 100px inherit; */
     margin-top: 50px;
     margin-bottom: 100px;
 }
 
-/* EXPERIENCE SECTION STYLE */
-.experience{
-    margin-top: 20px;
+/* PAGE CONTENTS HEADING. */
+.page-contents-heading{
+    display: flex;
+    width: 80%;
 }
 
+
+/* EXPERIENCE SECTION/HONORS & AWARDS SECTION STYLE STARTS. */
+
 .nav-pills .nav-link.active.tab-open, .nav-pills .show > .nav-link.tab-open {
-color: #46B3A2;
-background-color: #172a45;
-border-radius: 0;
-border-left: 6px solid #46B3A2;
-border-bottom: 2px solid black;
+    color: #46B3A2;
+    background-color: #172a45;
+    border-radius: 0;
+    border-left: 5px solid #46B3A2;
+    border-bottom: 1px solid rgba(0, 0, 0, .5);
+    padding-left: 20px;
 }
 
 .nav-pills .nav-link.active.tab-close, .nav-pills .show > .nav-link.tab-close {
-color: #7992A1;
-background-color: #172a45;
-border-radius: 0;
-border-left: 6px solid #7992A1;
-border-bottom: 2px solid black;
+    color: #7992A1;
+    background-color: #172a45;
+    border-radius: 0;
+    border-left: 5px solid #7992A1;
+    border-bottom: 1px solid rgba(0, 0, 0, .3);
+    padding-left: 20px;
 }
 
 .tab-pane {
-background-color: #172a45 !important;
-color: #7992B0;
-padding: 30px;
-border-bottom: 2px solid black;
-margin-left: 6px;
-}
-
-.tab-pane h4 {
-color: #CCD6F6;
-margin-bottom: 10px;
+    background-color: #172a45!important;
+    color: #7992B0;
+    padding: 30px 50px;
+    border-bottom: 1px solid rgba(0, 0, 0, .3);
+    margin-left: 5px;
 }
 
 .tab-pane ul {
-list-style-image: url('../images/list_bullet.png');
-padding-left: 10px;
-margin-bottom: 5px;
+    padding-left: 10px;
+    margin: 30px 5px 5px 5px;
 }
 
-.tab-pane li {
-margin: 15px 0;
+.tab-pane ul li {
+    margin: 15px 0;
+    padding: 5px 20px;
 }
 
-.tab-pane.tab-close {
-display: none;
+.tab-pane .tab-close {
+    display: none;
 }
 
 .tab-pane.tab-open {
-display: block;
+    display: block;
 }
 
 .nav-pills .nav-item.show .nav-link, .nav-pills .nav-link.active {
-padding: 10px;
-width: 330px;
+    padding: 10px;
+    width: 330px;
 }
 
 @media (min-width: 576px) {
@@ -307,8 +312,43 @@ width: 330px;
     }
 }
 
-/* EXPERIENCE SECTION STYLE ENDS*/
+/* EXPERIENCE SECTION/HONORS & AWARDS SECTION STYLE ENDS */
   
+
+/* PUBLICATIONS SECTION STYLE STARTS. */
+
+#publications{
+
+}
+
+#publications .card{
+    background-color: #0A192F;
+    height: 300px;
+    padding: 5px;
+}
+
+#publications .card .card-body{
+
+}
+
+#publications .card .card-body a{
+    float: right;
+    margin-right: 5px;
+}
+#publications .card .card-body a:hover i{
+    color: #5AE7C8;
+    transition: 1.5s;
+}
+
+#publications .card .card-body div{
+    /* color: #5AE7C8; */
+    margin-top: 10px;
+    padding: 10px 0;
+}
+
+/* PUBLICATIONS SECTION STYLE ENDS. */
+
+
 /* SOCIAL MEDIA LINKS CLASS STYLE SECTION. */
 .social_media_links{
     list-style-type: none;
@@ -359,13 +399,14 @@ width: 330px;
 
 #large_screen_links ul li a{
     color: #7C87A4;
-    font-size: 18px;
+    font-size: 20px;
 }
 #large_screen_links ul li a:hover{
     color: #5AE7C8;
-    margin-bottom: 8px;
+    margin-bottom: 5px;
+    /* bottom: 10px; */
     text-decoration-line: none;
-    font-size: 20px;
+    /* font-size: 20px; */
     transition: 0.3s;
 }
 
