@@ -338,7 +338,9 @@ body{
     padding: 0px 15px 2px 0px;
     float: right;
   }
-  
+  img .project{
+    filter:grayscale(100%);
+  }
 /* PROJECTS SECTION STYLE ENDS. */
 
 /* PUBLICATIONS SECTION STYLE STARTS. */
