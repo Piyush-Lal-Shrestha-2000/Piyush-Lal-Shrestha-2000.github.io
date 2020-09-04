@@ -17,7 +17,28 @@ body{
     min-width: 300px;
     height: auto;
     overflow-x: hidden;
+    overflow-y: hidden;
 }
+
+/* SCREEN LOADER STYLE STARTS. */
+
+#screen-loader{
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: #020C1B;
+    z-index: 2;
+}
+
+#screen-loader div{
+    text-align: center;
+    position: relative;
+    top: 40%;
+}
+
+/* SCREEN LOADER STYLE ENDS. */
 
 
 /* SOME CUSTOM STYLES FOR COMPONENTS STARTS. */
@@ -167,6 +188,7 @@ body{
     filter: grayscale(100%);
     /* filter: sepia(100%); */
     cursor: pointer;
+    box-shadow: 10px 10px grey;
 }
 .filtered-image:hover{
     filter: none;
@@ -255,6 +277,15 @@ body{
 
 
 /* EXPERIENCE SECTION/HONORS & AWARDS SECTION STYLE STARTS. */
+
+#experience_section ul li a:hover, #honors_and_awards_section ul li a:hover{
+    color: #46B3A2;
+    background-color: #172a45;
+    border-radius: 0;
+    border-left: 5px solid #46B3A2;
+    border-bottom: 1px solid rgba(0, 0, 0, .5);
+    padding-left: 20px;
+}
 
 .nav-pills .nav-link.active.tab-open, .nav-pills .show > .nav-link.tab-open {
     color: #46B3A2;
@@ -345,19 +376,21 @@ body{
 
 /* PUBLICATIONS SECTION STYLE STARTS. */
 
-#publications{
+/* #publications{
 
-}
+} */
 
 #publications .card{
     background-color: #0A192F;
     height: 300px;
     padding: 5px;
+    border: solid 1px rgba(16, 41, 59, 1);
+    box-shadow: 2px 2px rgba(136, 146, 175, 0.5);
 }
 
-#publications .card .card-body{
+/* #publications .card .card-body{
 
-}
+} */
 
 #publications .card .card-body a{
     float: right;
@@ -521,5 +554,150 @@ body{
     #large_screen_email{
         visibility: hidden;
     }
+
+    /* FOR HUGE TEXT. */
+    .text-huge{
+        font-size: 52px;
+        font-weight: bold;
+        margin: 0;
+        padding: 0;
+        word-spacing: -20px;
+    }
+
+    /* FOR BIG TEXT. */
+    .text-big{
+        font-size: 42px;
+        font-weight: 900;
+        margin: 0;
+        padding: 0;
+        word-spacing: -20px;
+    }
+
+    /* FOR HEADING TEXT. */
+    .text-heading{
+        font-size: 20px;
+        font-weight: 600;
+        margin: 5px 0;
+        padding: 0;
+    }
+    /* FOR HEADING SIZED NUMBERS. */
+    .number-heading{
+        font-size: 18px;
+        font-weight: 600;
+        margin: 5px 0;
+        padding: 0;
+    }
+
+    /* FOR NORMAL SIZED TEXT. */
+    .text-normal{
+        font-size: 15px;
+        font-weight: 400;
+        margin: 0;
+        padding: 0;
+        letter-spacing: 1px;
+        word-spacing: 2px;
+    }
+    /* FOR NORMAL SIZED NUMBERS. */
+    .number-normal{
+        font-size: 12px;
+        font-weight: 400;
+        margin: 0;
+        padding: 0;
+        letter-spacing: 1px;
+        word-spacing: 2px;
+    }
+
+    /* FOR SMALL SIZED TEXT. */
+    .text-small{
+        font-size: 12px;
+        font-weight: 400;
+        margin: 0;
+        padding: 0;
+        word-spacing: 2px;
+    }
+
+    /* FOR TINY TEXT. */
+    .text-tiny{
+        font-size: 10px;
+        font-weight: 200;
+        margin: 0;
+        padding: 0;
+        word-spacing: 2px;
+    }
+
+}
+
+@media screen and (max-width: 992px){
+
+    /* FOR HUGE TEXT. */
+    .text-huge{
+        font-size: 42px;
+        font-weight: bold;
+        margin: 0;
+        padding: 0;
+        word-spacing: -20px;
+    }
+
+    /* FOR BIG TEXT. */
+    .text-big{
+        font-size: 32px;
+        font-weight: 900;
+        margin: 0;
+        padding: 0;
+        word-spacing: -20px;
+    }
+
+    /* FOR HEADING TEXT. */
+    .text-heading{
+        font-size: 18px;
+        font-weight: 600;
+        margin: 5px 0;
+        padding: 0;
+    }
+    /* FOR HEADING SIZED NUMBERS. */
+    .number-heading{
+        font-size: 16px;
+        font-weight: 600;
+        margin: 5px 0;
+        padding: 0;
+    }
+
+    /* FOR NORMAL SIZED TEXT. */
+    .text-normal{
+        font-size: 12px;
+        font-weight: 400;
+        margin: 0;
+        padding: 0;
+        letter-spacing: 1px;
+        word-spacing: 2px;
+    }
+    /* FOR NORMAL SIZED NUMBERS. */
+    .number-normal{
+        font-size: 10px;
+        font-weight: 400;
+        margin: 0;
+        padding: 0;
+        letter-spacing: 1px;
+        word-spacing: 2px;
+    }
+
+    /* FOR SMALL SIZED TEXT. */
+    .text-small{
+        font-size: 10px;
+        font-weight: 400;
+        margin: 0;
+        padding: 0;
+        word-spacing: 2px;
+    }
+
+    /* FOR TINY TEXT. */
+    .text-tiny{
+        font-size: 8px;
+        font-weight: 200;
+        margin: 0;
+        padding: 0;
+        word-spacing: 2px;
+    }
+    
 
 }
