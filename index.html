@@ -21,6 +21,9 @@
         <!-- IMPORTING FONT AWESOME. -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
+        <!-- IMPORTING AOS. -->
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
         <!-- IMPORTING CUTSOM CSS STYLES. -->
         <link rel="stylesheet" href="styles/main_style.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css">
@@ -52,7 +55,7 @@
 
         <!-- NAVBAR SECTION STARTS. -->
 
-        <nav class="navbar navbar-expand-xl custom-navbar" style="background: #0A192F; height: 75px;">
+        <nav class="navbar navbar-expand-lg custom-navbar" style="background: #0A192F; height: 75px;">
             
             <!-- NAVBAR LOGO. -->
             <a class="navbar-brand ml-3" href="#">
@@ -131,7 +134,7 @@
                 
                 <!-- INTRO SECTION STARTS. -->
 
-                <div id="intro_section" class="page-contents col-md-10">
+                <div id="intro_section" class="page-contents" data-aos="fade-down">
                     
                     <p class="neon-text text-small">
                         Hi, my name is
@@ -161,7 +164,7 @@
 
                 <!-- ABOUT SECTION STARTS. -->
                 
-                <div id="about_section" class="page-contents">
+                <div id="about_section" data-aos="fade-up" class="page-contents">
                     
                     <!-- HEADING. -->
                     <div class="page-contents-heading">
@@ -176,7 +179,7 @@
                             
                         </div>
                         
-                        <div class="horizontal_line"></div>
+                        <!-- <div class="horizontal_line"></div> -->
 
                     </div>
 
@@ -193,11 +196,11 @@
                             <!-- ABOUT ME SECOND PARAGRAPH. -->
                             <p class="text-small gray-text-1">
                                 Shortly after completion of my sophomore year at 
-                                <a href="http://www.wsc.zjut.edu.cn/zjuten/index.jsp" class="neon-text" target="blank">
+                                <a href="http://www.wsc.zjut.edu.cn/zjuten/index.jsp" class="neon-text text-small" target="blank">
                                     Zhejiang University of Technology
                                 </a>
                                 , I joined the engineering team at 
-                                <a href="#" class="neon-text" target="blank">Tolaroid Technologies</a>
+                                <a href="#" class="neon-text text-small" target="blank">Tolaroid Technologies</a>
                                 where I worked on a wide variety of interesting and meaningful projects on a daily basis.
                             </p>
                             <br>
@@ -234,7 +237,7 @@
                         </div>
 
                         <!-- IMAGE. -->
-                        <div class="col-md-5 align-self-center order-sm-1 order-md-2">
+                        <div class="col-md-5 align-self-center order-sm-1 order-md-2" data-aos="fade-left">
                             <img class="img-fluid filtered-image" src="images/nischal-aboutme.png">
                         </div>
                     
@@ -246,7 +249,8 @@
 
                 <!-- EXPERIENCE SECTION STARTS. -->
 
-                <div id="experience_section" class="page-contents" style="width:90%;">
+                <!-- <div id="experience_section" class="page-contents" style="width:90%;"> -->
+                <div id="experience_section" data-aos="fade-up" class="page-contents">
                     
                     <!-- HEADING. -->
                     <div class="page-contents-heading">
@@ -261,7 +265,7 @@
                             
                         </div>
                         
-                        <div class="horizontal_line"></div>
+                        <!-- <div class="horizontal_line"></div> -->
 
                     </div>
 
@@ -493,10 +497,11 @@
 
                 <!-- Projects SECTION STARTS. -->
 
-                <div id="work_section" class="page-contents"> <!-- style="width:90%;"> -->
-<!--                 <div id="work_section" class="page-contents mx-auto" style="width:90%;"> -->
+                <!-- <div id="work_section" class="page-contents mx-auto" style="width:90%;"> -->
+                <div id="work_section" class="page-contents">
 
-                    
+<!--                 <div id="work_section" class="page-contents"> <!-- style="width:90%;"> --> -->
+<!--                 <div id="work_section" class="page-contents mx-auto" style="width:90%;"> -->
                     <!-- HEADING. -->
                     <div class="page-contents-heading">
 
@@ -510,31 +515,22 @@
                             
                         </div>
                         
-                        <div class="horizontal_line"></div>
+                        <!-- <div class="horizontal_line"></div> -->
 
                     </div>
 
                     <!-- Projects -->
-                    <div class="row">
 
+                    <div class="row" data-aos="fade-left">
                         <div class="col-md-5">
-                            <div class="card project"><img class="card-img-top w-100 d-block project-img" src="../images/Ligno%20Cellulose%20to%20Biofuel-small.jpg">
-                                <h5 class="project-text">Ligno Cellulose to Biofuel<a class="btn btn-img" data-lightbox="image-1" data-title="Ligno Cellulose to Biofuel" role="button" href="../images/Ligno%20Cellulose%20to%20Biofuel%201.png"><i class="fa fa-info-circle"></i></a></h5>
-                            </div>
-                        </div>
-                        <div class="col-md-5 offset-md-2">
-                            <div class="card project"><img class="card-img-top w-100 d-block project-img" src="../images/Water%20Treatment-small.jpg">
-                                <h5 class="project-text">Water Treatment<a class="btn btn-img" data-lightbox="image-1" data-title="Water Treatment" role="button" href="../images/Water%20Treatment%201.png"><i class="fa fa-info-circle"></i></a></h5>
 
-<!--                         <div class="col-10 col-md-4 offset-1 offset-md-1">
                             <div class="card project"><img class="card-img-top w-100 d-block project-img" src="images/Ligno_Cellulose_to_Biofuel_Small.jpg">
                                 <h5 class="project-text">Ligno Cellulose to Biofuel<a class="btn btn-img" data-lightbox="image-1" data-title="Ligno Cellulose to Biofuel" role="button" href="images/Ligno_Cellulose_to_Biofuel_1.png"><i class="fa fa-info-circle"></i></a></h5>
                             </div>
                         </div>
-                        <div class="col-10 col-md-4 offset-1 offset-md-2">
+                        <div class="col-md-5 offset-md-2" data-aos="fade-left">
                             <div class="card project"><img class="card-img-top w-100 d-block project-img" src="images/Water_Treatment_Small.jpg">
-                                <h5 class="project-text">Water Treatment<a class="btn btn-img" data-lightbox="image-1" data-title="Water Treatment" role="button" href="images/Water_Treatment_1.png"><i class="fa fa-info-circle"></i></a></h5> -->
-
+                                <h5 class="project-text">Water Treatment<a class="btn btn-img" data-lightbox="image-1" data-title="Water Treatment" role="button" href="images/Water_Treatment_1.png"><i class="fa fa-info-circle"></i></a></h5>
                             </div>
                         </div>
                     </div>
@@ -560,13 +556,15 @@
                             
                         </div>
                         
-                        <div class="horizontal_line"></div>
+                        <!-- <div class="horizontal_line"></div> -->
 
                     </div>
 
-                    <div id="publications" class="card-deck mt-5">
+                    <!-- <div id="publications" class="card-deck mt-5 row mx-auto"> -->
+                    <div id="publications" class="card-deck row justify-content-center mt-5">
 
-                        <div class="card">
+                        <!-- <div class="card col-4 col-md-4 mx-auto"> -->
+                        <div class="card col-md-4" data-aos="fade-left">
                             
                             <div class="card-body">
 
@@ -584,8 +582,9 @@
 
                         </div>
                         
-                        <div class="card">
-                            
+                        <!-- <div class="card col-4 col-md-4 mx-auto"> -->
+                        <div class="card col-md-4" data-aos="fade-up">
+
                             <div class="card-body">
 
                                 <i class="fa fa-envelope neon-text text-normal" aria-hidden="true"></i>
@@ -602,8 +601,9 @@
 
                         </div>
 
-                        <div class="card">
-                            
+                        <!-- <div class="card col-4 col-md-4 mx-auto"> -->
+                        <div class="card col-md-4" data-aos="fade-right">
+
                             <div class="card-body">
 
                                 <i class="fa fa-envelope neon-text text-normal" aria-hidden="true"></i>
@@ -628,10 +628,11 @@
 
                 <!-- HONORS & AWARDS SECTION STARTS. -->
 
-                <div id="honors_and_awards_section" style="width: 80%;" class="page-contents mx-auto">
+                <!-- <div id="honors_and_awards_section" style="width: 80%;" class="page-contents mx-auto"> -->
+                <div id="honors_and_awards_section" class="page-contents">
                     
                     <!-- HEADING. -->
-                    <div class="page-contents-heading">
+                    <div class="page-contents-heading" data-aos="fade-right">
 
                         <div>
                         
@@ -643,18 +644,18 @@
                             
                         </div>
                         
-                        <div class="horizontal_line"></div>
+                        <!-- <div class="horizontal_line"></div> -->
 
                     </div>
 
                     <!-- HONORS & AWARDS. -->
-                    <div class="mt-5">
+                    <div class="mt-5" data-aos="fade-left">
 
                         <!-- GLOBAL HUMANITARIAN AWARD. -->  
                         <div>
                         
                             <!-- TAB HEADING. -->
-                            <ul class="nav nav-pills">
+                            <ul class="nav nav-pills" data-aos="fade-left">
                                 <li class="nav-item">
                                     <a class="nav-link active honors_and_awards_section_group text-small tab-open" role="tab" data-toggle="tab" href="#honors_and_awards_section_tab_1" onclick="switch_tabs(this, 'honors_and_awards_section_group')">
                                         Global Humanitarian Award
@@ -663,7 +664,7 @@
                             </ul>
 
                             <!-- TAB CONTENT. -->
-                            <div class="tab-content">
+                            <div class="tab-content" data-aos="fade-right">
 
                                 <div id="honors_and_awards_section_tab_1" class="tab-pane honors_and_awards_section_group tab-open" role="tabpanel" >
                                     
@@ -682,7 +683,7 @@
                         <div>
                         
                             <!-- TAB HEADING. -->
-                            <ul class="nav nav-pills">
+                            <ul class="nav nav-pills" data-aos="fade-left">
                                 <li class="nav-item">
                                     <a class="nav-link active honors_and_awards_section_group text-small tab-close" role="tab" data-toggle="tab" href="#honors_and_awards_section_tab_2" onclick="switch_tabs(this, 'honors_and_awards_section_group')">
                                         Best Chief Executive Officer in South Asia
@@ -691,7 +692,7 @@
                             </ul>
 
                             <!-- TAB CONTENT. -->
-                            <div class="tab-content">
+                            <div class="tab-content" data-aos="fade-right">
 
                                 <div id="honors_and_awards_section_tab_2" class="tab-pane honors_and_awards_section_group tab-close" role="tabpanel" >
                                     
@@ -711,7 +712,7 @@
                         <div>
                         
                             <!-- TAB HEADING. -->
-                            <ul class="nav nav-pills">
+                            <ul class="nav nav-pills" data-aos="fade-left">
                                 <li class="nav-item">
                                     <a class="nav-link active honors_and_awards_section_group text-small tab-close" role="tab" data-toggle="tab" href="#honors_and_awards_section_tab_3" onclick="switch_tabs(this, 'honors_and_awards_section_group')">
                                         Friendship Award
@@ -720,7 +721,7 @@
                             </ul>
 
                             <!-- TAB CONTENT. -->
-                            <div class="tab-content">
+                            <div class="tab-content" data-aos="fade-right">
 
                                 <div id="honors_and_awards_section_tab_3" class="tab-pane honors_and_awards_section_group tab-close" role="tabpanel" >
                                     
@@ -744,7 +745,7 @@
 
                 <!-- CONTACT SECTION STARTS. -->
 
-                <div id="contact_section" class="page-contents">
+                <div id="contact_section" class="page-contents" data-aos="fade-up">
 
                     <!-- HEADING. -->
                     <div class="row">
@@ -766,7 +767,7 @@
                         </div>
                     </div>
 
-                    <a href="mailto:nishchalbaniya@gmail.com">
+                    <a href="mailto:nishchalbaniya@gmail.com" data-aos="fade-right">
                         <button class="btn-lg neon-btn-lg mt-5">
                             Say Hello
                         </button>
@@ -915,6 +916,13 @@
         <!-- IMPORTING JQuery. -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
+
+        <!-- IMPORTING AOS. -->
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+        <script>
+            AOS.init();
+        </script>
 
         <!-- IMPORTING CUSTOM SCRIPTS. -->
         <script src="scripts/main_script.js"></script>
