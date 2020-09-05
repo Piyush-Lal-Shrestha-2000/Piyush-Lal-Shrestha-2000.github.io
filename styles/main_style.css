@@ -14,8 +14,8 @@
 /* SETTING THE STYLE FOR BODY SECTION. */
 body{
     background: #0A192F;
-    min-width: 320px;
-    height: auto;
+    /* min-width: 320px; */
+    /* height: auto; */
     overflow-x: hidden;
     overflow-y: hidden;
 }
@@ -28,7 +28,7 @@ body{
     position: fixed;
     top: 0;
     left: 0;
-    background: #020C1B;
+    background: #0A192F;
     z-index: 2;
 }
 
@@ -189,7 +189,7 @@ body{
     /* filter: sepia(100%); */
     cursor: pointer;
     border-radius: 5px;
-    box-shadow: 10px 10px gray;
+    box-shadow: 10px 10px rgba(90, 231, 200, .4);
 }
 .filtered-image:hover{
     filter: none;
@@ -250,7 +250,7 @@ body{
 /* CONTENTS SECTION STYLES STARTS. */
 
 .contents-class{
-    background: url('../images/background.png');    /* Importing background image. */
+    background: url('../images/Frame_4.png');    /* Importing background image. */
     /* height: 100%; Actual height of the image. */
     /* background-position: center; Center the image */
     background-repeat: repeat-y space; /* Repeat image in y direction. */
