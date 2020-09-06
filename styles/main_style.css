@@ -253,7 +253,8 @@ body{
 /* CONTENTS SECTION STYLES STARTS. */
 
 .contents-class{
-    background: url('../images/background_1.png');    /* Importing background image. */
+    background: url('../images/background.png');    /* Importing background image. */
+
     /* height: 100%; Actual height of the image. */
     background-position: center; /* Center the image */
     /* background-repeat: repeat-y space; Repeat image in y direction. */
@@ -840,7 +841,11 @@ img .project{
     .contents-class{
         /* background: url('../images/Frame_4.png');    
         Importing background image. */
-        background: red;
+        background: url('../images/background-small.png');
+        background-attachment: fixed;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position:center;
     }
 
 }
