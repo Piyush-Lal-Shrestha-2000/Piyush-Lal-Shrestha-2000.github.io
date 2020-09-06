@@ -253,13 +253,16 @@ body{
 /* CONTENTS SECTION STYLES STARTS. */
 
 .contents-class{
-    background: url('../images/Frame_4.png');    /* Importing background image. */
+    background: url('../images/background_1.png');    /* Importing background image. */
     /* height: 100%; Actual height of the image. */
     background-position: center; /* Center the image */
-    background-repeat: repeat-y space; /* Repeat image in y direction. */
+    /* background-repeat: repeat-y space; Repeat image in y direction. */
     /* width: 100%; */
-    background-size: contain; /* Resize the background image to cover the entire container */
+    background-size: cover; /* Resize the background image to cover the entire container */
     margin-top: -50px;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
 }
 
 .contents-class div{
@@ -832,6 +835,12 @@ img .project{
     
     #about_section .page-contents-heading{
         margin-bottom: 0px;   
+    }
+
+    .contents-class{
+        /* background: url('../images/Frame_4.png');    
+        Importing background image. */
+        background: red;
     }
 
 }
