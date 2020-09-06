@@ -250,7 +250,7 @@ body{
 /* CONTENTS SECTION STYLES STARTS. */
 
 .contents-class{
-    background: url('../images/Frame_4.png');    /* Importing background image. */
+    background: url('../images/back.png');    /* Importing background image. */
     /* height: 100%; Actual height of the image. */
     /* background-position: center; Center the image */
     background-repeat: repeat-y space; /* Repeat image in y direction. */
