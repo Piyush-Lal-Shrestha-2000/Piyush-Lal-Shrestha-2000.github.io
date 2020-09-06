@@ -842,6 +842,10 @@ img .project{
         /* background: url('../images/Frame_4.png');    
         Importing background image. */
         background: url('../images/background-small.png');
+        background-attachment: fixed;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position:center;
     }
 
 }
