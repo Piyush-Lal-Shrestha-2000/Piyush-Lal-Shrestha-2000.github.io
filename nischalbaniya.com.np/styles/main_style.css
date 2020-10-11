@@ -18,6 +18,9 @@ body{
     /* height: auto; */
     overflow-x: hidden;
     overflow-y: hidden;
+    /* position: relative;
+    top: 0;
+    width: 100%; */
 }
 
 /* SCREEN LOADER STYLE STARTS. */
@@ -252,10 +255,10 @@ body{
 .contents-class{
     background: url('../images/Frame_4.png');    /* Importing background image. */
     /* height: 100%; Actual height of the image. */
-    /* background-position: center; Center the image */
+    background-position: center; /* Center the image */
     background-repeat: repeat-y space; /* Repeat image in y direction. */
     /* width: 100%; */
-    background-size: contain; /*Resize the background image to cover the entire container*/
+    background-size: contain; /* Resize the background image to cover the entire container */
     margin-top: -50px;
 }
 
@@ -329,10 +332,12 @@ body{
 
 .tab-pane .tab-close {
     display: none;
+    transition: 1s;
 }
 
 .tab-pane.tab-open {
     display: block;
+    transition: 1s;
 }
 
 .nav-pills .nav-item.show .nav-link, .nav-pills .nav-link.active {
